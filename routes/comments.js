@@ -7,7 +7,7 @@ const router = express.Router();
 const Comments = require("../schemas/comment.js");
 
 router.post("/comments/:_id", async (req, res) => {
-	const { user, password, content } = req.body;
+  const { user, password, content } = req.body;
   const postId = req.params;
 
   if (!content) {
